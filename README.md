@@ -10,3 +10,7 @@ A browser-based tournament Gomoku game.
 - Undo and redo controls
 - Korean, English, and Chinese UI
 - Static GitHub Pages deployment
+
+## Deployment
+
+This repository includes a GitHub Pages workflow for deploying the static site from `main`.
