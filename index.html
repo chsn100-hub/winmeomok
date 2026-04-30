@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>경기용 오목게임</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="game-header">
+      <div>
+        <h1 id="titleText">경기용 오목</h1>
+        <p id="subtitleText" class="subtitle">흑 금수 규칙이 적용된 15줄 오목</p>
+      </div>
+      <div class="score-card" aria-live="polite">
+        <span id="turnBadge" class="turn-badge black-turn">흑 차례</span>
+        <span id="moveCount">0수</span>
+      </div>
+    </header>
+
+    <p id="status">현재 차례: 흑돌 ●</p>
+
+    <section class="game-options" aria-label="대전 설정">
+      <label>
+        <span id="languageLabel">언어</span>
+        <select id="languageSelect">
+          <option value="ko" selected>한국어</option>
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+      </label>
+      <label>
+        <span id="opponentLabel">대전</span>
+        <select id="opponentSelect">
+          <option id="opponentComputerOption" value="computer" selected>컴퓨터와 대전</option>
+          <option id="opponentHumanOption" value="human">2인 대전</option>
+        </select>
+      </label>
+      <label>
+        <span id="humanColorLabel">내 돌</span>
+        <select id="humanColorSelect">
+          <option id="humanBlackOption" value="1" selected>흑돌</option>
+          <option id="humanWhiteOption" value="2">백돌</option>
+        </select>
+      </label>
+    </section>
+
+    <div class="board-wrap">
+      <div id="board" class="board"></div>
+      <div id="gameOverBanner" class="game-over-banner" hidden>
+        <strong id="winnerText">흑돌 승리!</strong>
+        <button id="playAgainBtn" type="button">다시하기</button>
+      </div>
+    </div>
+
+    <div class="toolbar" aria-label="게임 도구">
+      <button id="undoAllBtn" type="button">처음으로</button>
+      <button id="undoBtn" type="button">한 수 무르기</button>
+      <button id="redoBtn" type="button">다시 두기</button>
+      <button id="redoAllBtn" type="button">끝까지</button>
+    </div>
+
+    <div class="buttons">
+      <button id="resetBtn">다시 시작</button>
+    </div>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2 id="moveLogTitle">착수 기록</h2>
+        <label class="toggle">
+          <input id="forbiddenToggle" type="checkbox" checked />
+          <span id="forbiddenToggleLabel">금수 표시</span>
+        </label>
+      </div>
+      <ol id="moveLog" class="move-log"></ol>
+    </section>
+
+    <section class="rules">
+      <h2 id="rulesTitle">적용 규칙</h2>
+      <p id="rulesText">Yixin 설정을 참고해 15x15 보드, 로그, 금수 표시, 무르기/다시두기, 컴퓨터 대전을 넣었습니다. 흑은 장목, 쌍삼, 쌍사가 금수입니다.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
