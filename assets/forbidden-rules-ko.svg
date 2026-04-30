@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">흑돌 금수 규칙</title>
+  <desc id="desc">장목, 쌍삼, 쌍사 금수 예시를 카드 형태로 설명합니다.</desc>
+  <rect width="900" height="420" rx="18" fill="#f8f3e8"/>
+  <text x="48" y="58" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#211913">흑돌 금수 한눈에 보기</text>
+  <text x="48" y="92" font-family="Arial, sans-serif" font-size="17" fill="#655747">흑은 아래 모양을 만드는 수를 둘 수 없습니다.</text>
+
+  <g transform="translate(44 126)">
+    <rect width="250" height="238" rx="12" fill="#fffdf8" stroke="#d9c8ad"/>
+    <text x="24" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#15120f">장목</text>
+    <text x="24" y="70" font-family="Arial, sans-serif" font-size="15" fill="#6b5d4e">6목 이상으로 이어지면 금수</text>
+    <g transform="translate(26 104)" stroke="#8d6b42" stroke-width="2">
+      <line x1="0" y1="36" x2="198" y2="36"/>
+      <line x1="0" y1="72" x2="198" y2="72"/>
+      <line x1="0" y1="108" x2="198" y2="108"/>
+      <line x1="22" y1="12" x2="22" y2="132"/>
+      <line x1="58" y1="12" x2="58" y2="132"/>
+      <line x1="94" y1="12" x2="94" y2="132"/>
+      <line x1="130" y1="12" x2="130" y2="132"/>
+      <line x1="166" y1="12" x2="166" y2="132"/>
+    </g>
+    <g fill="#111">
+      <circle cx="48" cy="176" r="13"/><circle cx="84" cy="176" r="13"/><circle cx="120" cy="176" r="13"/>
+      <circle cx="156" cy="176" r="13"/><circle cx="192" cy="176" r="13"/><circle cx="228" cy="176" r="13"/>
+    </g>
+    <text x="180" y="178" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#c93b30">×</text>
+  </g>
+
+  <g transform="translate(325 126)">
+    <rect width="250" height="238" rx="12" fill="#fffdf8" stroke="#d9c8ad"/>
+    <text x="24" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#15120f">쌍삼</text>
+    <text x="24" y="70" font-family="Arial, sans-serif" font-size="15" fill="#6b5d4e">열린 3이 두 줄 생기면 금수</text>
+    <g transform="translate(36 100)" stroke="#8d6b42" stroke-width="2">
+      <line x1="0" y1="36" x2="176" y2="36"/><line x1="0" y1="72" x2="176" y2="72"/><line x1="0" y1="108" x2="176" y2="108"/>
+      <line x1="34" y1="2" x2="34" y2="142"/><line x1="70" y1="2" x2="70" y2="142"/><line x1="106" y1="2" x2="106" y2="142"/><line x1="142" y1="2" x2="142" y2="142"/>
+    </g>
+    <g fill="#111">
+      <circle cx="70" cy="172" r="13"/><circle cx="106" cy="172" r="13"/><circle cx="142" cy="172" r="13"/>
+      <circle cx="142" cy="136" r="13"/><circle cx="142" cy="208" r="13"/>
+    </g>
+    <circle cx="142" cy="172" r="17" fill="none" stroke="#c93b30" stroke-width="4"/>
+    <text x="164" y="178" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#c93b30">×</text>
+  </g>
+
+  <g transform="translate(606 126)">
+    <rect width="250" height="238" rx="12" fill="#fffdf8" stroke="#d9c8ad"/>
+    <text x="24" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#15120f">쌍사</text>
+    <text x="24" y="70" font-family="Arial, sans-serif" font-size="15" fill="#6b5d4e">4목 위협이 두 줄 생기면 금수</text>
+    <g transform="translate(34 96)" stroke="#8d6b42" stroke-width="2">
+      <line x1="0" y1="32" x2="180" y2="32"/><line x1="0" y1="68" x2="180" y2="68"/><line x1="0" y1="104" x2="180" y2="104"/>
+      <line x1="18" y1="0" x2="18" y2="132"/><line x1="54" y1="0" x2="54" y2="132"/><line x1="90" y1="0" x2="90" y2="132"/><line x1="126" y1="0" x2="126" y2="132"/><line x1="162" y1="0" x2="162" y2="132"/>
+    </g>
+    <g fill="#111">
+      <circle cx="52" cy="164" r="13"/><circle cx="88" cy="164" r="13"/><circle cx="124" cy="164" r="13"/><circle cx="160" cy="164" r="13"/>
+      <circle cx="124" cy="128" r="13"/><circle cx="124" cy="200" r="13"/>
+    </g>
+    <circle cx="124" cy="164" r="17" fill="none" stroke="#c93b30" stroke-width="4"/>
+    <text x="176" y="170" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#c93b30">×</text>
+  </g>
+</svg>
