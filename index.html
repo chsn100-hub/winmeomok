@@ -16,6 +16,7 @@
       <div class="score-card" aria-live="polite">
         <span id="turnBadge" class="turn-badge black-turn">흑 차례</span>
         <span id="moveCount">0수</span>
+        <span id="timerBadge" class="timer-badge">20초</span>
       </div>
     </header>
 
@@ -44,6 +45,20 @@
           <option id="humanWhiteOption" value="2">백돌</option>
         </select>
       </label>
+      <label id="difficultyField">
+        <span id="difficultyLabel">난이도</span>
+        <select id="difficultySelect">
+          <option id="difficultyEasyOption" value="easy">쉬움</option>
+          <option id="difficultyNormalOption" value="normal" selected>보통</option>
+          <option id="difficultyHardOption" value="hard">어려움</option>
+          <option id="difficultyHellOption" value="hell">헬어려움</option>
+        </select>
+      </label>
+    </section>
+
+    <section id="startPanel" class="start-panel">
+      <p id="startHint">대전 방식과 난이도를 고른 뒤 시작하세요.</p>
+      <button id="startBtn" type="button">게임 시작</button>
     </section>
 
     <div class="board-wrap">
@@ -55,10 +70,7 @@
     </div>
 
     <div class="toolbar" aria-label="게임 도구">
-      <button id="undoAllBtn" type="button">처음으로</button>
       <button id="undoBtn" type="button">한 수 무르기</button>
-      <button id="redoBtn" type="button">다시 두기</button>
-      <button id="redoAllBtn" type="button">끝까지</button>
     </div>
 
     <div class="buttons">
@@ -78,7 +90,11 @@
 
     <section class="rules">
       <h2 id="rulesTitle">적용 규칙</h2>
-      <p id="rulesText">Yixin 설정을 참고해 15x15 보드, 로그, 금수 표시, 무르기/다시두기, 컴퓨터 대전을 넣었습니다. 흑은 장목, 쌍삼, 쌍사가 금수입니다.</p>
+      <p id="rulesText">15x15 보드에서 흑은 정확히 5목을 만들면 승리합니다. 백은 5목 이상이면 승리합니다.</p>
+      <figure class="forbidden-figure">
+        <img id="forbiddenRulesImage" src="assets/forbidden-rules-ko.svg" alt="흑돌 금수 규칙: 장목, 쌍삼, 쌍사" />
+        <figcaption id="forbiddenRulesCaption">흑돌 금수는 위 세 가지 모양을 만들 수 없습니다.</figcaption>
+      </figure>
     </section>
   </div>
 
